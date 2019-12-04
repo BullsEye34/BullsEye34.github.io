@@ -1,4 +1,4 @@
 This is a Brave Rewards publisher verification file.
 
-Domain: vamshiprasad.tk
-Token: 0f650f1d0f39bd040f85ee65cf6a0d907b299ad72ee002a8f0c145fecdb4f756
+Domain: vamshiprasad.ga
+Token: e6bea5eb7fc92aca1654f54b358978985f9eac66df2316cf377438091122fe53
