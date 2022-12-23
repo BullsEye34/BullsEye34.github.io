@@ -4,8 +4,11 @@
 <head>
   <meta name="yandex-verification" content="84eb4ed042272854" />
   <link rel="icon" href="./img/profile.jpg" type="image/x-icon">
-  <link rel="stylesheet"
+  <!-- <link rel="stylesheet"
     href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
+ -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+          
 
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -47,6 +50,37 @@
 
 </head>
 
+<script>
+  function parseDuration(startTime, endTime) {
+    var duration = (endTime.getTime() - startTime.getTime()) / (1000 * 60 * 60 * 24);
+
+    var year, months, returnable="( ";
+
+    year = duration >= 365 ? Math.floor(duration / 365) : 0;
+    duration = year ? duration - (year*365) : duration;
+
+    months = duration >= 30 ? Math.floor((duration % 365) / 30) : 0;
+    duration = months ? duration - (months*30) : duration;
+
+    if(year!==0){
+      returnable += year;
+      if(year>1)
+        returnable += " years, ";
+      else
+        returnable += " year, ";
+    }
+    if(months!==0){
+      returnable += months;
+      if(months>1)
+        returnable += " months ";
+      else
+        returnable += " month ";
+    }
+    returnable +=")";
+    
+return returnable;
+  }
+  </script>
 <style>
   a {
     color: #BF2424;
@@ -97,36 +131,20 @@
   </nav>
 
   <div class="container-fluid p-0">
-
     <section class="resume-section p-3 p-lg-5 d-flex d-column" id="about">
       <div class="my-auto">
         <h1 class="mb-0" style="color: #BF2424;">Vamshi
           <span class="text-primary">Prasad</span>
-        </h1>
-        <div class="subheading mb-5">284 , 2nd main · New B.D.A. Layout Avalahalli, Bangalore, IN 560085 · <a
+        </h1><br>
+        <div class="subheading mb-5"><a
             href="tel:+918660718302">+91 (8660) 718-302</a> ·
           <a href="mailto:vamvijkum@gmail.com">vamvijkum@gmail.com</a>
         </div>
-        <p class="mb-5">I am experienced in leveraging agile frameworks to provide a robust synopsis for high level
-          overviews. Iterative approaches to corporate strategy foster collaborative thinking to further the overall
+        <p class="mb-5">An experienced Flutter Engineer who leverages agile frameworks to provide a robust synopsis 
+          for high level overviews, with iterative approaches to corporate strategy fostering collaborative thinking to further the overall
           value proposition.</p>
         <ul class="list-inline list-social-icons mb-0">
-          <li class="list-inline-item">
-            <a href="https://www.facebook.com/Agent.VB.34" style="color: #BF2424;">
-              <span class="fa-stack fa-lg">
-                <i class="fa fa-circle fa-stack-2x"></i>
-                <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
-              </span>
-            </a>
-          </li>
-          <li class="list-inline-item">
-            <a href="https://twitter.com/vamkumvij" style="color: #BF2424;">
-              <span class="fa-stack fa-lg">
-                <i class="fa fa-circle fa-stack-2x"></i>
-                <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
-              </span>
-            </a>
-          </li>
+          
           <li class="list-inline-item">
             <a href="https://www.linkedin.com/in/vamshi-prasad-633503112/" style="color: #BF2424;">
               <span class="fa-stack fa-lg">
@@ -158,7 +176,7 @@
     </style>
     <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="experience">
       <div class="my-auto">
-        <h2 class="mb-5">Experience</h2>
+        <h2 class="mb-5">Professional Experience</h2>
 
         <!--<div class="resume-item d-flex flex-column flex-md-row mb-5">
             <div class="resume-content mr-auto">
@@ -170,6 +188,7 @@
               <span class="text-primary">September 2017 - Present</span>
             </div>
           </div>-->
+          
           <div class="resume-item d-flex flex-column flex-md-row mb-5">
             <div class="resume-content mr-auto">
               <h3 class="mb-0">Flutter Developer</h3>
@@ -177,9 +196,10 @@
               <p>Have been working as a Flutter Developer at Digital Trons since Feb. 2022, leveraging, innovating, and developing many skills. I have been responsible for the deployment and maintainance of varioujs cross platform applications.</p>
             </div>
             <div class="resume-date text-md-right">
-              <span class="text-primary">14th Feb 2022 - Present</span>
+              <span class="text-primary">14th Feb 2022 - Present <script>document.write(parseDuration(new Date("2022-02-14"), new Date()));</script> </span>
             </div>
           </div>
+
           <div class="resume-item d-flex flex-column flex-md-row mb-5">
             <div class="resume-content mr-auto">
               <h3 class="mb-0">Associate IT Consultant</h3>
@@ -187,9 +207,10 @@
               <p>Have been working as an Associate IT Consultant at ITC Infotech since Sept. 2021, leveraging, innovating, and developing many skills.</p>
             </div>
             <div class="resume-date text-md-right">
-              <span class="text-primary">14th Sept 2021 - 14th Feb 2022</span>
+              <span class="text-primary">14th Sept 2021 - 14th Feb 2022 <script>document.write(parseDuration(new Date("2021-08-14"), new Date("2022-02-14")));</script> </span>
             </div>
           </div>
+
         <div class="resume-item d-flex flex-column flex-md-row mb-5">
           <div class="resume-content mr-auto">
             <h3 class="mb-0">Freelance Flutter Engineer</h3>
@@ -198,9 +219,10 @@
             <p>Worked at Yes Mentor as a Freelance Flutter Engineer.</p>
           </div>
           <div class="resume-date text-md-right">
-            <span class="text-primary">19th March 2021 - 19th July 2021</span>
+            <span class="text-primary">19th March 2021 - 19th July 2021 <script>document.write(parseDuration(new Date("2021-03-19"), new Date("2021-08-19")));</script> </span>
           </div>
         </div>
+
         <div class="resume-item d-flex flex-column flex-md-row mb-5">
           <div class="resume-content mr-auto">
             <h3 class="mb-0">Software Developer - Intern</h3>
@@ -210,9 +232,10 @@
             <p>Worked at Dockero Technologies as the lead Flutter Software Developer using Flutter.</p>
           </div>
           <div class="resume-date text-md-right">
-            <span class="text-primary">03rd January 2021 - 03rd April 2021</span>
+            <span class="text-primary">03rd January 2021 - 03rd April 2021 <script>document.write(parseDuration(new Date("2021-01-03"), new Date("2021-05-03")));</script> </span>
           </div>
         </div>
+
         <div class="resume-item d-flex flex-column flex-md-row mb-5">
           <div class="resume-content mr-auto">
             <h3 class="mb-0">Software Developer - Intern</h3>
@@ -222,9 +245,10 @@
               revolutionazing Shopping. </p>
           </div>
           <div class="resume-date text-md-right">
-            <span class="text-primary">02nd June 2020 - 02nd December 2020</span>
+            <span class="text-primary">02nd June 2020 - 02nd December 2020 <script>document.write(parseDuration(new Date("2020-06-02"), new Date("2021-01-02")));</script> </span>
           </div>
         </div>
+
         <div class="resume-item d-flex flex-column flex-md-row mb-5">
           <div class="resume-content mr-auto">
             <h3 class="mb-0">Machine Learning Engineer - Intern</h3>
@@ -233,7 +257,7 @@
             <p>Started Working at NextUp, a Tech-Ed Company. </p>
           </div>
           <div class="resume-date text-md-right">
-            <span class="text-primary">29th June 2020 - 26th July, 2020</span>
+            <span class="text-primary">29th June 2020 - 26th July, 2020 <script>document.write(parseDuration(new Date("2020-05-29"), new Date("2020-07-26")));</script> </span>
           </div>
         </div>
 
@@ -245,11 +269,10 @@
             <p>Started Working at HeadStrt, a California Based Startup. </p>
           </div>
           <div class="resume-date text-md-right">
-            <span class="text-primary">13th March 2020 - 26th April 2020</span>
+            <span class="text-primary">13th March 2020 - 26th April 2020 <script>document.write(parseDuration(new Date("2020-02-13"), new Date("2020-04-26")));</script> </span>
           </div>
         </div>
 
-        
         <div class="resume-item d-flex flex-column flex-md-row mb-5">
           <div class="resume-content mr-auto">
             <h3 class="mb-0">Guest Lecturer</h3>
@@ -289,7 +312,6 @@
           </div>
         </div>
 
-        
         <div class="resume-item d-flex flex-column flex-md-row mb-5">
           <div class="resume-content mr-auto">
             <h3 class="mb-0">Resource Person</h3>
@@ -302,6 +324,7 @@
             <span class="text-primary">26th September, 2018</span>
           </div>
         </div>
+        
         <div class="resume-item d-flex flex-column flex-md-row mb-5">
           <div class="resume-content mr-auto">
             <h3 class="mb-0">Web Developer</h3>
@@ -312,26 +335,9 @@
             <p>Develop Beautiful, Stunning, Mind Blowing, Catchy Websites for clients under contracts.</p>
           </div>
           <div class="resume-date text-md-right">
-            <span class="text-primary">March 2017 - Present</span>
+            <span class="text-primary">March 2017 - Present ( 3+ Years ) </span>
           </div>
         </div>
-       
-
-
-
-        <!--<div class="resume-item d-flex flex-column flex-md-row mb-5">
-            <div class="resume-content mr-auto">
-              <h3 class="mb-0">Web Developer Intern</h3>
-              <div class="subheading mb-3"><a href="https://www.sunpvenergy.com"> SunPV Energy </a></div>
-              <p>Merge Victron Energy Database into SunPV Energy Front End.</p>
-            </div>
-            <div class="resume-date text-md-right">
-              <span class="text-primary">January 2019</span>
-            </div>
-          </div>-->
-
-
-
 
     </section>
 
@@ -343,130 +349,220 @@
 
         <div class="subheading mb-3">Programming Languages &amp; Tools</div>
         <ul class="list-inline list-icons">
+
           <li class="list-inline-item">
-            <i class="devicons devicons-html5"></i>
-          </li>
-          <li class="list-inline-item">
-            <i class="devicons devicons-css3"></i>
-          </li>
-          <li class="list-inline-item">
-            <i class="devicons devicons-javascript"></i>
-          </li>
-          <!--<li class="list-inline-item">
-              <i class="devicons devicons-jquery"></i>
-            </li>-->
-          <li class="list-inline-item">
-            <i class="devicons devicons-sass"></i>
-          </li>
-          <li class="list-inline-item">
-            <img src="img/kindpng_3557482.png"
-              style="width: 30px; height: 35px; margin-bottom: 10px; filter: grayscale(); " alt="" srcset="">
-          </li>
-          <li class="list-inline-item">
-            <i class="devicons devicons-illustrator"></i>
-          </li>
-          <li class="list-inline-item">
-            <i class="devicons devicons-photoshop"></i>
-          </li>
-          <li class="list-inline-item">
-            <i class="devicons devicons-dart"></i>
+            <i class="devicons devicon-flutter-plain"></i>
           </li>
 
           <li class="list-inline-item">
-            <i class="devicons devicons-git"></i>
+            <i class="devicon-dart-plain"></i>
           </li>
 
           <li class="list-inline-item">
-            <i class="devicons devicons-github"></i>
+            <i class="devicon-vscode-plain"></i>
           </li>
+
+          <li class="list-inline-item">
+            <i class="devicon-androidstudio-plain"></i>
+          </li>
+
+          <li class="list-inline-item">
+            <i class="devicon-xcode-plain"></i>
+          </li>
+
+          <li class="list-inline-item">
+            <i class="devicon-java-plain"></i>
+          </li>
+
+          <li class="list-inline-item">
+            <i class="devicon-spring-plain"></i>
+          </li>
+
+          <li class="list-inline-item">
+            <i class="devicon-jira-plain"></i>
+          </li>
+
+          <li class="list-inline-item">
+            <i class="devicon-intellij-plain"></i>
+          </li>
+
+          <li class="list-inline-item">
+            <i class="devicon-graphql-plain"></i>
+          </li>
+
+          <li class="list-inline-item">
+            <i class="devicon-figma-plain"></i>
+          </li>
+
+          <li class="list-inline-item">
+            <i class="devicon-eslint-original"></i>
+          </li>
+
+          <li class="list-inline-item">
+            <i class="devicon-google-plain"></i>
+          </li>
+
+          <li class="list-inline-item">
+            <i class="devicon-apple-plain"></i>
+          </li>
+
+          <li class="list-inline-item">
+            <i class="devicon-aarch64-plain"></i>
+          </li>
+
+          <li class="list-inline-item">
+            <i class="devicon-firebase-plain"></i>
+          </li>
+
+          <li class="list-inline-item">
+            <i class="devicon-mongodb-plain"></i>
+          </li>
+
           <li class="list-inline-item">
             <i class="devicon-c-plain"></i>
           </li>
+
           <li class="list-inline-item">
             <i class="devicon-cplusplus-plain"></i>
           </li>
-          <li class="list-inline-item">
-            <i class="devicons devicons-java"></i>
-          </li>
-          <li class="list-inline-item">
-            <i class="devicons devicons-terminal"></i>
-          </li>
-          <li class="list-inline-item">
-            <i class="devicons devicons-mysql"></i>
-          </li>
-          <li class="list-inline-item">
-            <i class="devicons devicons-ubuntu"></i>
-          </li>
-          <li class="list-inline-item">
-            <i class="devicons devicons-android"></i>
-          </li>
-
 
           <li class="list-inline-item">
-            <i class="devicons devicons-python"></i>
+            <i class="devicon-materialui-plain"></i>
+          </li>
+
+          <li class="list-inline-item">
+            <i class="devicon-html5-plain"></i>
+          </li>
+
+          <li class="list-inline-item">
+            <i class="devicon-css3-plain"></i>
+          </li>
+
+          <li class="list-inline-item">
+            <i class="devicon-javascript-plain"></i>
+          </li>
+          
+          <li class="list-inline-item">
+            <i class="devicon-nodejs-plain"></i>
+          </li>
+
+          <li class="list-inline-item">
+            <i class="devicon-express-original"></i>
+          </li>
+
+          <li class="list-inline-item">
+            <i class="devicon-sass-original"></i>
+          </li>
+
+          <li class="list-inline-item">
+            <i class="devicon-git-plain"></i>
+          </li>
+
+          <li class="list-inline-item">
+            <i class="devicon-github-original"></i>
+          </li>
+
+          <li class="list-inline-item">
+            <i class="devicon-gitlab-plain"></i>
+          </li>
+
+          <li class="list-inline-item">
+            <i class="devicon-bitbucket-original"></i>
+          </li>
+
+          <li class="list-inline-item">
+            <i class="devicon-bash-plain"></i>
+          </li>
+
+          <li class="list-inline-item">
+            <i class="devicon-putty-plain"></i>
+          </li>
+
+          <li class="list-inline-item">
+            <i class="devicon-linux-plain"></i>
+          </li>
+
+          <li class="list-inline-item">
+            <i class="devicon-ubuntu-plain"></i>
+          </li>
+
+          <li class="list-inline-item">
+            <i class="devicon-debian-plain"></i>
+          </li>
+
+          <li class="list-inline-item">
+            <i class="devicon-fedora-plain"></i>
+          </li>
+
+          <li class="list-inline-item">
+            <i class="devicon-android-plain"></i>
+          </li>
+
+          <li class="list-inline-item">
+            <i class="devicon-mysql-plain"></i>
+          </li>
+
+          <li class="list-inline-item">
+            <i class="devicon-illustrator-plain"></i>
+          </li>
+
+          <li class="list-inline-item">
+            <i class="devicon-photoshop-plain"></i>
           </li>
           <li class="list-inline-item">
-            <i class="devicon-redhat-plain"></i>
+            <i class="devicon-python-plain"></i>
           </li>
+
           <li class="list-inline-item">
             <i class="devicon-vim-plain"></i>
           </li>
-          <!--<li class="list-inline-item">
-              <i class="devicons devicons-less"></i>
-            </li>-->
+          
           <li class="list-inline-item">
-            <i class="devicons devicons-bootstrap"></i>
-          </li>
-          <li class="list-inline-item">
-            <i class="devicons devicons-wordpress"></i>
-          </li>
-          <!--<li class="list-inline-item">
-              <i class="devicons devicons-grunt"></i>
-            </li>-->
-          <!--<li class="list-inline-item">
-              <i class="devicons devicons-gulp"></i>
-            </li>-->
-          <!--<li class="list-inline-item">
-              <i class="devicons devicons-npm"></i>
-            </li>-->
-
-          <li class="list-inline-item">
-            <i class="devicons devicons-swift"></i>
-          </li>
-          <li class="list-inline-item">
-            <i class="devicons devicons-linux"></i>
-          </li>
-          <li class="list-inline-item">
-            <i class="devicons devicons-firefox"></i>
+            <i class="devicon-bootstrap-plain"></i>
           </li>
 
-          <!-- <li class="list-inline-item">
-            <i class="devicons devicons-flutter"></i>
-          </li> -->
           <li class="list-inline-item">
-            <i class="devicons devicons-visualstudio"></i>
+            <i class="devicon-wordpress-plain"></i>
           </li>
+
           <li class="list-inline-item">
-            <i class="devicons devicons-windows"></i>
+            <i class="devicon-swift-plain"></i>
+          </li>
+
+          <li class="list-inline-item">
+            <i class="devicon-safari-plain"></i>
+          </li>
+
+          <li class="list-inline-item">
+            <i class="devicon-firefox-plain"></i>
+          </li>
+
+          <li class="list-inline-item">
+            <i class="devicon-visualstudio-plain"></i>
+          </li>
+
+          <li class="list-inline-item">
+            <i class="devicon-windows8-original"></i>
           </li>
 
           <li class="list-inline-item">
             <i class="devicon-devicon-plain"></i>
           </li>
+
           <li class="list-inline-item">
             <i class="devicon-react-original"></i>
           </li>
+
           <li class="list-inline-item">
-            <i class="devicons devicons-npm"></i>
+            <i class="devicon-npm-original-wordmark"></i>
           </li>
+
           <li class="list-inline-item">
-            <i class="devicons devicons-firebase"></i>
+            <i class="devicon-googlecloud-plain"></i>
           </li>
+
           <li class="list-inline-item">
-            <i class="devicons devicons-google-cloud-platform"></i>
-          </li>
-          <li class="list-inline-item">
-            <i class="devicons devicons-aws"></i>
+            <i class="devicon-amazonwebservices-original"></i>
           </li>
 
         </ul>
@@ -487,7 +583,7 @@
           </li>
           <li>
             <i class="fa-li fa fa-check"></i>
-            Android OS Development
+            Clean Code Architecture for Flutter
           </li>
         </ul>
       </div>
@@ -497,16 +593,6 @@
       <div class="my-auto">
         <h2 class="mb-5">Projects And Contracts</h2>
 
-        <!--<div class="resume-item d-flex flex-column flex-md-row mb-5">
-            <div class="resume-content mr-auto">
-              <h3 class="mb-0">C.E.O.</h3>
-              <div class="subheading mb-3">Uttunga Entertainments</div>
-              <p>Bring to the table win-win survival strategies to ensure proactive domination. At the end of the day, going forward, a new normal that has evolved from generation X is on the runway heading towards a streamlined cloud solution. User generated content in real-time will have multiple touchpoints for offshoring.</p>
-            </div>
-            <div class="resume-date text-md-right">
-              <span class="text-primary">September 2017 - Present</span>
-            </div>
-          </div>-->
         <div class="resume-item d-flex flex-column flex-md-row mb-5">
           <div class="resume-content mr-auto">
             <h3 class="mb-0">Web Developer</h3>
@@ -518,6 +604,7 @@
             <span class="text-primary">21st April 2020 - Present</span>
           </div>
         </div>
+
         <div class="resume-item d-flex flex-column flex-md-row mb-5">
           <div class="resume-content mr-auto">
             <h3 class="mb-0">Flutter Engineer</h3>
@@ -531,6 +618,7 @@
             <span class="text-primary">19th March 2021 - Present</span>
           </div>
         </div>
+
         <div class="resume-item d-flex flex-column flex-md-row mb-5">
           <div class="resume-content mr-auto">
             <h3 class="mb-0">Ledger</h3>
@@ -543,6 +631,7 @@
             <span class="text-primary">28th April 2020 - Present</span>
           </div>
         </div>
+
         <div class="resume-item d-flex flex-column flex-md-row mb-5">
           <div class="resume-content mr-auto">
             <h3 class="mb-0">Flutter Engineer</h3>
@@ -555,6 +644,7 @@
             <span class="text-primary">13th March to 26th April, 2020</span>
           </div>
         </div>
+
         <div class="resume-item d-flex flex-column flex-md-row mb-5">
           <div class="resume-content mr-auto">
             <h3 class="mb-0">Resource Person</h3>
@@ -582,7 +672,6 @@
           </div>
         </div>
 
-
         <div class="resume-item d-flex flex-column flex-md-row mb-5">
           <div class="resume-content mr-auto">
             <h3 class="mb-0">NO GST CALCULAtor</h3>
@@ -594,20 +683,6 @@
             <span class="text-primary">13th July, 2019</span>
           </div>
         </div>
-
-
-        <!-- <div class="resume-item d-flex flex-column flex-md-row mb-5">
-            <div class="resume-content mr-auto">
-              <h3 class="mb-0">Artivatic</h3>
-              <div class="subheading mb-3"><a href="http://www.vamshiprasad.ga/artivatic.github.io/" target="_blank">a website for Artivatic Data Labs Pvt. Ltd.</a></div>
-              <p></p>
-            </div>
-            <div class="resume-date text-md-right">
-              <span class="text-primary">3rd June, 2019</span>
-            </div>
-          </div>-->
-
-
 
         <div class="resume-item d-flex flex-column flex-md-row mb-5">
           <div class="resume-content mr-auto">
@@ -621,8 +696,6 @@
           </div>
         </div>
 
-
-
         <div class="resume-item d-flex flex-column flex-md-row mb-5">
           <div class="resume-content mr-auto">
             <h3 class="mb-0">ProtoWorks</h3>
@@ -634,7 +707,6 @@
             <span class="text-primary">17th February, 2019</span>
           </div>
         </div>
-
 
         <div class="resume-item d-flex flex-column flex-md-row mb-5">
           <div class="resume-content mr-auto">
@@ -648,8 +720,6 @@
           </div>
         </div>
 
-
-
         <div class="resume-item d-flex flex-column flex-md-row mb-5">
           <div class="resume-content mr-auto">
             <h3 class="mb-0">Uttunga Entertainments</h3>
@@ -662,15 +732,11 @@
           </div>
         </div>
 
-
-
-
         <div class="resume-item d-flex flex-column flex-md-row mb-5">
           <div class="resume-content mr-auto">
             <h3 class="mb-0">Android Custom ROM Development</h3>
             <div class="subheading mb-3"><a href="https://androidfilehost.com/?w=profile&uid=673368273298936714"
                 target="_blank">Compiled Various Custom ROMs and Much More</a></div>
-
             <p></p>
           </div>
           <div class="resume-date text-md-right">
@@ -690,31 +756,11 @@
           </div>
         </div>
 
-
-
-
-
-
-        <!--<div class="resume-item d-flex flex-column flex-md-row mb-5">
-            <div class="resume-content mr-auto">
-              <h3 class="mb-0">Web Developer Intern</h3>
-              <div class="subheading mb-3"><a href="https://www.sunpvenergy.com"> SunPV Energy </a></div>
-              <p>Merge Victron Energy Database into SunPV Energy Front End.</p>
-            </div>
-            <div class="resume-date text-md-right">
-              <span class="text-primary">January 2019</span>
-            </div>
-          </div>-->
-
-
-
-
     </section>
 
     <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="volunteering">
       <div class="my-auto">
         <h2 class="mb-5">Volunteering and Hobbies</h2>
-
 
         <div class="resume-item d-flex flex-column flex-md-row mb-5">
           <div class="resume-content mr-auto">
@@ -726,6 +772,7 @@
             <span class="text-primary">Sept. 2020 - Present</span>
           </div>
         </div>
+
         <div class="resume-item d-flex flex-column flex-md-row mb-5">
           <div class="resume-content mr-auto">
             <h3 class="mb-0">Volunteer</h3>
@@ -737,6 +784,7 @@
             <span class="text-primary">15th July, 2020 - 22nd July, 2020</span>
           </div>
         </div>
+
         <div class="resume-item d-flex flex-column flex-md-row mb-5">
           <div class="resume-content mr-auto">
             <h3 class="mb-0">Volunteer and WebMaster</h3>
@@ -761,6 +809,7 @@
             <span class="text-primary">7th April, 2020</span>
           </div>
         </div>
+
         <div class="resume-item d-flex flex-column flex-md-row mb-5">
           <div class="resume-content mr-auto">
             <h3 class="mb-0">Volunteer</h3>
@@ -771,6 +820,7 @@
             <span class="text-primary">17th & 18th November, 2018</span>
           </div>
         </div>
+
         <div class="resume-item d-flex flex-column flex-md-row mb-5">
           <div class="resume-content mr-auto">
             <h3 class="mb-0">Coordintor</h3>
@@ -781,6 +831,7 @@
             <span class="text-primary">12th October, 2018</span>
           </div>
         </div>
+
         <div class="resume-item d-flex flex-column flex-md-row mb-5">
           <div class="resume-content mr-auto">
             <h3 class="mb-0">Android Custom ROM Developer</h3>
@@ -794,9 +845,6 @@
           </div>
         </div>
 
-        
-        
-
     </section>
 
     <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="education">
@@ -809,18 +857,19 @@
             <div class="subheading mb-3">Diploma of Higher Education</div>
             <div>Tourism
               and Business Management in Finland</div>
-            <p>ECTS: 60/60</p><br>
+            <!-- <p>ECTS: 60/60</p><br> -->
           </div>
           <div class="resume-date text-md-right">
             <span class="text-primary">September 2019 - October 2021</span>
           </div>
         </div>
+        
         <div class="resume-item d-flex flex-column flex-md-row mb-5">
           <div class="resume-content mr-auto">
             <h3 class="mb-0">AMC Engineering College</h3>
             <div class="subheading mb-3">Bachelor of Engineering (VTU)</div>
             <div>Computer Science Engineering</div>
-            <p>GPA: 7.22</p><br>
+            <!-- <p>GPA: 7.28</p><br> -->
           </div>
           <div class="resume-date text-md-right">
             <span class="text-primary">August 2017 - August 2021</span>
@@ -832,19 +881,18 @@
             <h3 class="mb-0">Sri Bhagawan Mahaveer Jain College</h3>
             <div class="subheading mb-3">Pre-University Course (NCERT)</div>
             <div>P.C.M.Cs</div>
-            <p>Score: 68.33%</p>
+            <!-- <p>Score: 68.33%</p> -->
           </div>
           <div class="resume-date text-md-right">
             <span class="text-primary">July 2015 - March 2017</span>
           </div>
         </div>
-        <br><br>
+        
         <div class="resume-item d-flex flex-column flex-md-row mb-5">
           <div class="resume-content mr-auto">
             <h3 class="mb-0">Sree Rama Vidyalaya</h3>
             <div class="subheading mb-3">Primary & Secondary Education (KSEEB)</div>
-
-            <p>Score : 83.68%</p>
+            <!-- <p>Score : 83.68%</p> -->
           </div>
           <div class="resume-date text-md-right">
             <span class="text-primary"> 2002 - March 2015</span>
@@ -874,58 +922,66 @@
             <i class="fa-li fa fa-trophy text-warning"></i>
             Microsoft Technical Associate - MTA (Javascript)
           </li>
+
           <li>
             <i class="fa-li fa fa-trophy text-warning"></i>
             QSpiders training certificate (SQL, Java)
           </li>
+
           <li>
             <i class="fa-li fa fa-trophy text-warning"></i>
             APIs and Microservices Certification FreeCodeCamp
           </li>
+
           <li>
             <i class="fa-li fa fa-trophy text-warning"></i>
             Google Certified Mobile Sites Expert
           </li>
+
           <li>
           <li>
             <i class="fa-li fa fa-trophy text-warning"></i>
             Google Certified Digital Sales Expert
           </li>
+
           <li>
             <i class="fa-li fa fa-trophy text-warning"></i>
             Google Certified AdWords Experts
           </li>
+
           <li>
             <i class="fa-li fa fa-trophy text-warning"></i>
             Udemy Certified Ethical Hacker
           </li>
+
           <li>
             <i class="fa-li fa fa-trophy text-warning"></i>
             Mobile Web Specialist - Google Certification
           </li>
+
           <li>
             <i class="fa-li fa fa-trophy text-warning"></i>
             1<sup>st</sup>
             Place at AMC Engineering College -College Level Winner -Youth Money Olympiad Competition 2018
           </li>
-          <!--<li>
-              <i class="fa-li fa fa-trophy text-warning"></i>
-             Andoid OS developer , i.e. , unofficial maintainer of AOSP-EXTENDED , LineageOS 15 and much more for the OnePlus 2 .</li> -->
-
+          
           <li>
             <i class="fa-li fa fa-trophy text-warning"></i>
 
             Python Programmer - Udemy Certifications
           </li>
+
           <li>
             <i class="fa-li fa fa-trophy text-warning"></i>
 
             Kotlin Programmer - Udemy Certifications
           </li>
+
           <li>
             <i class="fa-li fa fa-trophy text-warning"></i>
             Bootstrap Developer - Udemy Certifications
           </li>
+
           <li>
             <i class="fa-li fa fa-trophy text-warning"></i>
             Swift Developer - Udemy Certifications
@@ -934,7 +990,6 @@
         </ul>
       </div>
     </section>
-
   </div>
 
   <!-- Bootstrap core JavaScript -->
