@@ -4,8 +4,11 @@
 <head>
   <meta name="yandex-verification" content="84eb4ed042272854" />
   <link rel="icon" href="./img/profile.jpg" type="image/x-icon">
-  <link rel="stylesheet"
+  <!-- <link rel="stylesheet"
     href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
+ -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+          
 
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -51,7 +54,7 @@
   function parseDuration(startTime, endTime) {
     var duration = (endTime.getTime() - startTime.getTime()) / (1000 * 60 * 60 * 24);
 
-    var year, months, returnable="(";
+    var year, months, returnable="( ";
 
     year = duration >= 365 ? Math.floor(duration / 365) : 0;
     duration = year ? duration - (year*365) : duration;
@@ -66,8 +69,13 @@
       else
         returnable += " year, ";
     }
-    if(months!==0)
-      returnable += months+" Months";
+    if(months!==0){
+      returnable += months;
+      if(months>1)
+        returnable += " months ";
+      else
+        returnable += " month ";
+    }
     returnable +=")";
     
 return returnable;
@@ -199,7 +207,7 @@ return returnable;
               <p>Have been working as an Associate IT Consultant at ITC Infotech since Sept. 2021, leveraging, innovating, and developing many skills.</p>
             </div>
             <div class="resume-date text-md-right">
-              <span class="text-primary">14th Sept 2021 - 14th Feb 2022 (6 Months)</span>
+              <span class="text-primary">14th Sept 2021 - 14th Feb 2022 <script>document.write(parseDuration(new Date("2021-08-14"), new Date("2022-02-14")));</script> </span>
             </div>
           </div>
 
@@ -211,7 +219,7 @@ return returnable;
             <p>Worked at Yes Mentor as a Freelance Flutter Engineer.</p>
           </div>
           <div class="resume-date text-md-right">
-            <span class="text-primary">19th March 2021 - 19th July 2021 (5 Months)</span>
+            <span class="text-primary">19th March 2021 - 19th July 2021 <script>document.write(parseDuration(new Date("2021-03-19"), new Date("2021-08-19")));</script> </span>
           </div>
         </div>
 
@@ -224,7 +232,7 @@ return returnable;
             <p>Worked at Dockero Technologies as the lead Flutter Software Developer using Flutter.</p>
           </div>
           <div class="resume-date text-md-right">
-            <span class="text-primary">03rd January 2021 - 03rd April 2021 (4 Months)</span>
+            <span class="text-primary">03rd January 2021 - 03rd April 2021 <script>document.write(parseDuration(new Date("2021-01-03"), new Date("2021-05-03")));</script> </span>
           </div>
         </div>
 
@@ -237,7 +245,7 @@ return returnable;
               revolutionazing Shopping. </p>
           </div>
           <div class="resume-date text-md-right">
-            <span class="text-primary">02nd June 2020 - 02nd December 2020 (7 Months)</span>
+            <span class="text-primary">02nd June 2020 - 02nd December 2020 <script>document.write(parseDuration(new Date("2020-06-02"), new Date("2021-01-02")));</script> </span>
           </div>
         </div>
 
@@ -249,7 +257,7 @@ return returnable;
             <p>Started Working at NextUp, a Tech-Ed Company. </p>
           </div>
           <div class="resume-date text-md-right">
-            <span class="text-primary">29th June 2020 - 26th July, 2020 (1 Month)</span>
+            <span class="text-primary">29th June 2020 - 26th July, 2020 <script>document.write(parseDuration(new Date("2020-05-29"), new Date("2020-07-26")));</script> </span>
           </div>
         </div>
 
@@ -261,7 +269,7 @@ return returnable;
             <p>Started Working at HeadStrt, a California Based Startup. </p>
           </div>
           <div class="resume-date text-md-right">
-            <span class="text-primary">13th March 2020 - 26th April 2020 (2 Months)</span>
+            <span class="text-primary">13th March 2020 - 26th April 2020 <script>document.write(parseDuration(new Date("2020-02-13"), new Date("2020-04-26")));</script> </span>
           </div>
         </div>
 
@@ -327,7 +335,7 @@ return returnable;
             <p>Develop Beautiful, Stunning, Mind Blowing, Catchy Websites for clients under contracts.</p>
           </div>
           <div class="resume-date text-md-right">
-            <span class="text-primary">March 2017 - Present (3+ Years)</span>
+            <span class="text-primary">March 2017 - Present ( 3+ Years ) </span>
           </div>
         </div>
 
@@ -343,44 +351,71 @@ return returnable;
         <ul class="list-inline list-icons">
 
           <li class="list-inline-item">
-            <img src="img/kindpng_3557482.png"
-              style="width: 30px; height: 35px; margin-bottom: 10px; filter: grayscale(); " alt="" srcset="">
+            <i class="devicons devicon-flutter-plain"></i>
           </li>
 
           <li class="list-inline-item">
-            <i class="devicons devicons-dart"></i>
+            <i class="devicon-dart-plain"></i>
           </li>
 
           <li class="list-inline-item">
-            <i class="devicons devicons-html5"></i>
+            <i class="devicon-vscode-plain"></i>
           </li>
 
           <li class="list-inline-item">
-            <i class="devicons devicons-css3"></i>
+            <i class="devicon-androidstudio-plain"></i>
           </li>
 
           <li class="list-inline-item">
-            <i class="devicons devicons-javascript"></i>
+            <i class="devicon-xcode-plain"></i>
           </li>
 
           <li class="list-inline-item">
-            <i class="devicons devicons-sass"></i>
+            <i class="devicon-java-plain"></i>
           </li>
 
           <li class="list-inline-item">
-            <i class="devicons devicons-illustrator"></i>
+            <i class="devicon-spring-plain"></i>
           </li>
 
           <li class="list-inline-item">
-            <i class="devicons devicons-photoshop"></i>
-          </li>
-          
-          <li class="list-inline-item">
-            <i class="devicons devicons-git"></i>
+            <i class="devicon-jira-plain"></i>
           </li>
 
           <li class="list-inline-item">
-            <i class="devicons devicons-github"></i>
+            <i class="devicon-intellij-plain"></i>
+          </li>
+
+          <li class="list-inline-item">
+            <i class="devicon-graphql-plain"></i>
+          </li>
+
+          <li class="list-inline-item">
+            <i class="devicon-figma-plain"></i>
+          </li>
+
+          <li class="list-inline-item">
+            <i class="devicon-eslint-original"></i>
+          </li>
+
+          <li class="list-inline-item">
+            <i class="devicon-google-plain"></i>
+          </li>
+
+          <li class="list-inline-item">
+            <i class="devicon-apple-plain"></i>
+          </li>
+
+          <li class="list-inline-item">
+            <i class="devicon-aarch64-plain"></i>
+          </li>
+
+          <li class="list-inline-item">
+            <i class="devicon-firebase-plain"></i>
+          </li>
+
+          <li class="list-inline-item">
+            <i class="devicon-mongodb-plain"></i>
           </li>
 
           <li class="list-inline-item">
@@ -392,31 +427,90 @@ return returnable;
           </li>
 
           <li class="list-inline-item">
-            <i class="devicons devicons-java"></i>
+            <i class="devicon-materialui-plain"></i>
           </li>
 
           <li class="list-inline-item">
-            <i class="devicons devicons-terminal"></i>
+            <i class="devicon-html5-plain"></i>
           </li>
 
           <li class="list-inline-item">
-            <i class="devicons devicons-mysql"></i>
+            <i class="devicon-css3-plain"></i>
           </li>
 
           <li class="list-inline-item">
-            <i class="devicons devicons-ubuntu"></i>
+            <i class="devicon-javascript-plain"></i>
+          </li>
+          
+          <li class="list-inline-item">
+            <i class="devicon-nodejs-plain"></i>
           </li>
 
           <li class="list-inline-item">
-            <i class="devicons devicons-android"></i>
+            <i class="devicon-express-original"></i>
           </li>
 
           <li class="list-inline-item">
-            <i class="devicons devicons-python"></i>
+            <i class="devicon-sass-original"></i>
           </li>
 
           <li class="list-inline-item">
-            <i class="devicon-redhat-plain"></i>
+            <i class="devicon-git-plain"></i>
+          </li>
+
+          <li class="list-inline-item">
+            <i class="devicon-github-original"></i>
+          </li>
+
+          <li class="list-inline-item">
+            <i class="devicon-gitlab-plain"></i>
+          </li>
+
+          <li class="list-inline-item">
+            <i class="devicon-bitbucket-original"></i>
+          </li>
+
+          <li class="list-inline-item">
+            <i class="devicon-bash-plain"></i>
+          </li>
+
+          <li class="list-inline-item">
+            <i class="devicon-putty-plain"></i>
+          </li>
+
+          <li class="list-inline-item">
+            <i class="devicon-linux-plain"></i>
+          </li>
+
+          <li class="list-inline-item">
+            <i class="devicon-ubuntu-plain"></i>
+          </li>
+
+          <li class="list-inline-item">
+            <i class="devicon-debian-plain"></i>
+          </li>
+
+          <li class="list-inline-item">
+            <i class="devicon-fedora-plain"></i>
+          </li>
+
+          <li class="list-inline-item">
+            <i class="devicon-android-plain"></i>
+          </li>
+
+          <li class="list-inline-item">
+            <i class="devicon-mysql-plain"></i>
+          </li>
+
+          <li class="list-inline-item">
+            <i class="devicon-illustrator-plain"></i>
+          </li>
+
+          <li class="list-inline-item">
+            <i class="devicon-photoshop-plain"></i>
+          </li>
+          <li class="list-inline-item">
+            <i class="devicon-python-plain"></i>
           </li>
 
           <li class="list-inline-item">
@@ -424,31 +518,31 @@ return returnable;
           </li>
           
           <li class="list-inline-item">
-            <i class="devicons devicons-bootstrap"></i>
+            <i class="devicon-bootstrap-plain"></i>
           </li>
 
           <li class="list-inline-item">
-            <i class="devicons devicons-wordpress"></i>
+            <i class="devicon-wordpress-plain"></i>
           </li>
 
           <li class="list-inline-item">
-            <i class="devicons devicons-swift"></i>
+            <i class="devicon-swift-plain"></i>
           </li>
 
           <li class="list-inline-item">
-            <i class="devicons devicons-linux"></i>
+            <i class="devicon-safari-plain"></i>
           </li>
 
           <li class="list-inline-item">
-            <i class="devicons devicons-firefox"></i>
+            <i class="devicon-firefox-plain"></i>
           </li>
 
           <li class="list-inline-item">
-            <i class="devicons devicons-visualstudio"></i>
+            <i class="devicon-visualstudio-plain"></i>
           </li>
 
           <li class="list-inline-item">
-            <i class="devicons devicons-windows"></i>
+            <i class="devicon-windows8-original"></i>
           </li>
 
           <li class="list-inline-item">
@@ -460,19 +554,15 @@ return returnable;
           </li>
 
           <li class="list-inline-item">
-            <i class="devicons devicons-npm"></i>
+            <i class="devicon-npm-original-wordmark"></i>
           </li>
 
           <li class="list-inline-item">
-            <i class="devicons devicons-firebase"></i>
+            <i class="devicon-googlecloud-plain"></i>
           </li>
 
           <li class="list-inline-item">
-            <i class="devicons devicons-google-cloud-platform"></i>
-          </li>
-
-          <li class="list-inline-item">
-            <i class="devicons devicons-aws"></i>
+            <i class="devicon-amazonwebservices-original"></i>
           </li>
 
         </ul>
