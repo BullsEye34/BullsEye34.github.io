@@ -57,13 +57,18 @@
     var year, months, returnable="( ";
 
     year = duration >= 365 ? Math.floor(duration / 365) : 0;
+
     duration = year ? duration - (year*365) : duration;
 
     months = duration >= 30 ? Math.floor((duration % 365) / 30) : 0;
+
     duration = months ? duration - (months*30) : duration;
 
     if(year!==0){
-      returnable += year = " Y, ";
+      if(months!==0)
+      returnable += year + " Y, ";
+      else 
+      returnable += year + " Y ";
       
     }
     if(months!==0){
