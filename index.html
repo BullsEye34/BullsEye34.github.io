@@ -7,8 +7,8 @@
   <!-- <link rel="stylesheet"
     href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
  -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
-          
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+
 
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -55,32 +55,32 @@
   function parseDuration(startTime, endTime) {
     var duration = (endTime.getTime() - startTime.getTime()) / (1000 * 60 * 60 * 24);
 
-    var year, months, returnable="( ";
+    var year, months, returnable = "( ";
 
     year = duration >= 365 ? Math.floor(duration / 365) : 0;
 
-    duration = year ? duration - (year*365) : duration;
+    duration = year ? duration - (year * 365) : duration;
 
     months = duration >= 30 ? Math.floor((duration % 365) / 30) : 0;
 
-    duration = months ? duration - (months*30) : duration;
+    duration = months ? duration - (months * 30) : duration;
 
-    if(year!==0){
-      if(months!==0)
-      returnable += year + " Y, ";
-      else 
-      returnable += year + " Y ";
-      
+    if (year !== 0) {
+      if (months !== 0)
+        returnable += year + " Y, ";
+      else
+        returnable += year + " Y ";
+
     }
-    if(months!==0){
+    if (months !== 0) {
       returnable += months + " M ";
-      
+
     }
-    returnable +=")";
-    
-return returnable;
+    returnable += ")";
+
+    return returnable;
   }
-  </script>
+</script>
 <style>
   a {
     color: #BF2424;
@@ -136,15 +136,15 @@ return returnable;
         <h1 class="mb-0" style="color: #BF2424;">Vamshi
           <span class="text-primary">Prasad</span>
         </h1><br>
-        <div class="subheading mb-5"><a
-            href="tel:+918660718302">+91 (8660) 718-302</a> ·
+        <div class="subheading mb-5">
           <a href="mailto:vamvijkum@gmail.com">vamvijkum@gmail.com</a>
         </div>
-        <p class="mb-5">An experienced Flutter Engineer who leverages agile frameworks to provide a robust synopsis 
-          for high level overviews, with iterative approaches to corporate strategy fostering collaborative thinking to further the overall
+        <p class="mb-5">An experienced Flutter Engineer who leverages agile frameworks to provide a robust synopsis
+          for high level overviews, with iterative approaches to corporate strategy fostering collaborative thinking to
+          further the overall
           value proposition.</p>
         <ul class="list-inline list-social-icons mb-0">
-          
+
           <li class="list-inline-item">
             <a href="https://www.linkedin.com/in/vamshi-prasad-633503112/" style="color: #BF2424;">
               <span class="fa-stack fa-lg">
@@ -188,28 +188,53 @@ return returnable;
               <span class="text-primary">September 2017 - Present</span>
             </div>
           </div>-->
-          
-          <div class="resume-item d-flex flex-column flex-md-row mb-5">
-            <div class="resume-content mr-auto">
-              <h3 class="mb-0">Flutter Developer</h3>
-              <div class="subheading mb-3"><a href="https://digitaltrons.com" target="_blank">Flutter Developer at Digital Trons, Atlanta, Georgia</a></div>
-              <p>Have been working as a Flutter Developer at Digital Trons since Feb. 2022, leveraging, innovating, and developing many skills. I have been responsible for the deployment and maintainance of varioujs cross platform applications.</p>
-            </div>
-            <div class="resume-date text-md-right">
-              <span class="text-primary">14<sup>th</sup> Feb. 2022 - Present <script>document.write(parseDuration(new Date("2022-02-14"), new Date()));</script> </span>
-            </div>
-          </div>
 
-          <div class="resume-item d-flex flex-column flex-md-row mb-5">
-            <div class="resume-content mr-auto">
-              <h3 class="mb-0">Associate IT Consultant</h3>
-              <div class="subheading mb-3"><a href="https://www.itcinfotech.com/" target="_blank">Associate IT Consultant at ITC Infotech, Bangalore, India</a></div>
-              <p>Have been working as an Associate IT Consultant at ITC Infotech since Sept.. 2021, leveraging, innovating, and developing many skills.</p>
-            </div>
-            <div class="resume-date text-md-right">
-              <span class="text-primary">14<sup>th</sup> Sept. 2021 - 14<sup>th</sup> Feb. 2022 <script>document.write(parseDuration(new Date("2021-08-14"), new Date("2022-02-14")));</script> </span>
-            </div>
+        <div class="resume-item d-flex flex-column flex-md-row mb-5">
+          <div class="resume-content mr-auto">
+            <h3 class="mb-0">Software Development Engineer - II</h3>
+            <div class="subheading mb-3"><a href="https://digitaltrons.com" target="_blank">SDE-2 at Roam BV, Amsterdam,
+                Netherlands</a></div>
+            <p>Have been working as a Flutter Developer at Roam BV since May 2023, leveraging, innovating, and
+              developing many skills. I have been responsible for the deployment and maintainance of various cross
+              platform applications.</p>
           </div>
+          <div class="resume-date text-md-right">
+            <span class="text-primary">14<sup>th</sup> Feb. 2022 - Present
+              <script>document.write(parseDuration(new Date("2023-05-15"), new Date()));</script>
+            </span>
+          </div>
+        </div>
+
+        <div class="resume-item d-flex flex-column flex-md-row mb-5">
+          <div class="resume-content mr-auto">
+            <h3 class="mb-0">Flutter Developer</h3>
+            <div class="subheading mb-3"><a href="https://digitaltrons.com" target="_blank">Flutter Developer at Digital
+                Trons, Atlanta, Georgia</a></div>
+            <p>Worked as a Flutter Developer at Digital Trons since Feb. 2022, leveraging, innovating, and
+              developing many skills. I have been responsible for the deployment and maintainance of various cross
+              platform applications.</p>
+          </div>
+          <div class="resume-date text-md-right">
+            <span class="text-primary">14<sup>th</sup> Feb. 2022 - Present
+              <script>document.write(parseDuration(new Date("2022-02-14"), new Date("2023-05-10")));</script>
+            </span>
+          </div>
+        </div>
+
+        <div class="resume-item d-flex flex-column flex-md-row mb-5">
+          <div class="resume-content mr-auto">
+            <h3 class="mb-0">Associate IT Consultant</h3>
+            <div class="subheading mb-3"><a href="https://www.itcinfotech.com/" target="_blank">Associate IT Consultant
+                at ITC Infotech, Bangalore, India</a></div>
+            <p>Worked as an Associate IT Consultant at ITC Infotech since Sept.. 2021, leveraging,
+              innovating, and developing many skills.</p>
+          </div>
+          <div class="resume-date text-md-right">
+            <span class="text-primary">14<sup>th</sup> Sept. 2021 - 14<sup>th</sup> Feb. 2022
+              <script>document.write(parseDuration(new Date("2021-08-14"), new Date("2022-02-14")));</script>
+            </span>
+          </div>
+        </div>
 
         <div class="resume-item d-flex flex-column flex-md-row mb-5">
           <div class="resume-content mr-auto">
@@ -219,7 +244,9 @@ return returnable;
             <p>Worked at Yes Mentor as a Freelance Flutter Engineer.</p>
           </div>
           <div class="resume-date text-md-right">
-            <span class="text-primary">19<sup>th</sup> Mar. 2021 - 19<sup>th</sup> Jul. 2021 <script>document.write(parseDuration(new Date("2021-03-19"), new Date("2021-08-19")));</script> </span>
+            <span class="text-primary">19<sup>th</sup> Mar. 2021 - 19<sup>th</sup> Jul. 2021
+              <script>document.write(parseDuration(new Date("2021-03-19"), new Date("2021-08-19")));</script>
+            </span>
           </div>
         </div>
 
@@ -232,7 +259,9 @@ return returnable;
             <p>Worked at Dockero Technologies as the lead Flutter Software Developer using Flutter.</p>
           </div>
           <div class="resume-date text-md-right">
-            <span class="text-primary">03<sup>rd</sup> Jan. 2021 - 03<sup>rd</sup> Apr. 2021 <script>document.write(parseDuration(new Date("2021-01-03"), new Date("2021-05-03")));</script> </span>
+            <span class="text-primary">03<sup>rd</sup> Jan. 2021 - 03<sup>rd</sup> Apr. 2021
+              <script>document.write(parseDuration(new Date("2021-01-03"), new Date("2021-05-03")));</script>
+            </span>
           </div>
         </div>
 
@@ -245,7 +274,9 @@ return returnable;
               revolutionazing Shopping. </p>
           </div>
           <div class="resume-date text-md-right">
-            <span class="text-primary">02<sup>nd</sup> Jun. 2020 - 02<sup>nd</sup> Dec. 2020 <script>document.write(parseDuration(new Date("2020-06-02"), new Date("2021-01-02")));</script> </span>
+            <span class="text-primary">02<sup>nd</sup> Jun. 2020 - 02<sup>nd</sup> Dec. 2020
+              <script>document.write(parseDuration(new Date("2020-06-02"), new Date("2021-01-02")));</script>
+            </span>
           </div>
         </div>
 
@@ -257,7 +288,9 @@ return returnable;
             <p>Started Working at NextUp, a Tech-Ed Company. </p>
           </div>
           <div class="resume-date text-md-right">
-            <span class="text-primary">29<sup>th</sup> Jun. 2020 - 26<sup>th</sup> Jul. 2020 <script>document.write(parseDuration(new Date("2020-05-29"), new Date("2020-07-26")));</script> </span>
+            <span class="text-primary">29<sup>th</sup> Jun. 2020 - 26<sup>th</sup> Jul. 2020
+              <script>document.write(parseDuration(new Date("2020-05-29"), new Date("2020-07-26")));</script>
+            </span>
           </div>
         </div>
 
@@ -269,7 +302,9 @@ return returnable;
             <p>Started Working at HeadStrt, a California Based Startup. </p>
           </div>
           <div class="resume-date text-md-right">
-            <span class="text-primary">13<sup>th</sup> Mar. 2020 - 26<sup>th</sup> Apr. 2020 <script>document.write(parseDuration(new Date("2020-02-13"), new Date("2020-04-26")));</script> </span>
+            <span class="text-primary">13<sup>th</sup> Mar. 2020 - 26<sup>th</sup> Apr. 2020
+              <script>document.write(parseDuration(new Date("2020-02-13"), new Date("2020-04-26")));</script>
+            </span>
           </div>
         </div>
 
@@ -308,7 +343,8 @@ return returnable;
               Unity And AR, in AMC Engineering College, Bangalore. </p>
           </div>
           <div class="resume-date text-md-right">
-            <span class="text-primary">1<sup>st</sup>, 2<sup>nd</sup> Apr. 2019 ;<br> 11<sup>th</sup>, 12<sup>th</sup> Oct. 2019</span>
+            <span class="text-primary">1<sup>st</sup>, 2<sup>nd</sup> Apr. 2019 ;<br> 11<sup>th</sup>, 12<sup>th</sup>
+              Oct. 2019</span>
           </div>
         </div>
 
@@ -324,7 +360,7 @@ return returnable;
             <span class="text-primary">26<sup>th</sup> Sep 2018</span>
           </div>
         </div>
-        
+
         <div class="resume-item d-flex flex-column flex-md-row mb-5">
           <div class="resume-content mr-auto">
             <h3 class="mb-0">Web Developer</h3>
@@ -350,7 +386,7 @@ return returnable;
         <ul class="list-inline list-icons">
           <script>
             var iconList = [
-              "devicon-flutter-plain", 
+              "devicon-flutter-plain",
               "devicon-dart-plain",
               "devicon-vscode-plain",
               "devicon-androidstudio-plain",
@@ -405,17 +441,17 @@ return returnable;
               "devicon-googlecloud-plain",
               "devicon-amazonwebservices-original",
             ];
-         
-          for (const key in iconList) {
-            if (Object.hasOwnProperty.call(iconList, key)) {
-              const element = iconList[key];
-              document.write(
-              ` <li class="list-inline-item">
+
+            for (const key in iconList) {
+              if (Object.hasOwnProperty.call(iconList, key)) {
+                const element = iconList[key];
+                document.write(
+                  ` <li class="list-inline-item">
                   <i class=${element}></i>
                 </li>`
-            );
+                );
+              }
             }
-          }
           </script>
         </ul>
 
@@ -449,71 +485,71 @@ return returnable;
 
         <script>
           var dataList = [
-          {
-            "title": "Web Developer",
-            "company": "<a href=\"https://www.youdid.in/\" target=\"_blank\">Webmaster for YOUDID NGO.</a>",
-            "date": "21st April 2020 - Present"
-          },
-          {
-            "title": "Flutter Engineer",
-            "company": "<a href=\"http://yesmentor.co.in/\" target=\"_blank\">a contract with Carebro Innovators, as a FrontEnd Flutter Engineer",
-            "date": "19th March 2021 - 16th July"
-          },
-          {
-            "title": "Ledger",
-            "company": "<a href=\"#\" target=\"_blank\">A Flutter App For Calculating Transactions happening in a user's life </a>",
-            "date": "28th April 2020 - Present"
-          },
-          {
-            "title": "Flutter Engineer",
-            "company": "<a href=\"https://www.headstrt.com\" target=\"_blank\">a contract with Headstrt, A California Based Company, as a FrontEnd Flutter Engineer </a>",
-            "date": "13th March to 26th April, 2020"
-          },
-          {
-            "title": "Resource Person",
-            "company": "<a href=\"https://github.com/BullsEye34/BullsEye34.github.io/blob/master/portfolio/img/photo_2019-12-20_17-11-09.jpg\" target=\"_blank\">a contract with NextUp as a resource person for \"Creating Augmented Realities\" held in 2019</a>",
-            "date": "11th & 12th October, 2019"
-          },
-          {
-            "title": "Instagram Clone",
-            "company": "<a href=\"https://github.com/BullsEye34/instagram_clone/releases\" target=\"_blank\">a flutter app which clones the interface of instagram, and using the backend as firebase</a>",
-            "date": "16th July, 2019"
-          },
-          {
-            "title": "NO GST CALCULAtor",
-            "company": "<a href=\"https://github.com/BullsEye34/no_gst_calculator/releases\" target=\"_blank\">a flutter app to calculate selling price without gst from a given mrp</a>",
-            "date": "13th July, 2019"
-          },
-          {
-            "title": "AR Solar System",
-            "company": "<a href=\"https://github.com/BullsEye34/Solar-System\" target=\"_blank\">An Augmented Reality Based App Made Using Vuforia and Unity Engine.</a>",
-            "date": "15th March, 2019"
-          },
-          {
-            "title": "ProtoWorks",
-            "company": "<a href=\"http://www.vamshiprasad.ga/protoworks.github.io/\" target=\"_blank\">A website for a start-up, ProtoWorks</a>",
-            "date": "17th February, 2019"
-          },
-          {
-            "title": "Havoc OS",
-            "company": "<a href=\"http://www.vamshiprasad.ga/havgit.github.io/\" target=\"_blank\">A Website For An Android Custom ROM</a>",
-            "date": "23rd August, 2018"
-          },
-          {
-            "title": "Uttunga Entertainments",
-            "company": "<a href=\"http://www.uttunga.ga\" target=\"_blank\">A Website For A Group Of Movie Actors And Directors</a>",
-            "date": "27th June, 2018"
-          },
-          {
-            "title": "Android Custom ROM Development",
-            "company": "<a href=\"https://androidfilehost.com/?w=profile&uid=673368273298936714\" target=\"_blank\">Compiled Various Custom ROMs and Much More</a>",
-            "date": "July, 2016 - 20th June, 2018"
-          },
-          {
-            "title": "Raghavs Fitness",
-            "company": "<a href=\"http://www.raghavsfitness.tk/\" target=\"_blank\">A Website For A Gymnasium</a>",
-            "date": "30th April, 2018"
-          }
+            {
+              "title": "Web Developer",
+              "company": "<a href=\"https://www.youdid.in/\" target=\"_blank\">Webmaster for YOUDID NGO.</a>",
+              "date": "21st April 2020 - Present"
+            },
+            {
+              "title": "Flutter Engineer",
+              "company": "<a href=\"http://yesmentor.co.in/\" target=\"_blank\">a contract with Carebro Innovators, as a FrontEnd Flutter Engineer",
+              "date": "19th March 2021 - 16th July"
+            },
+            {
+              "title": "Ledger",
+              "company": "<a href=\"#\" target=\"_blank\">A Flutter App For Calculating Transactions happening in a user's life </a>",
+              "date": "28th April 2020 - Present"
+            },
+            {
+              "title": "Flutter Engineer",
+              "company": "<a href=\"https://www.headstrt.com\" target=\"_blank\">a contract with Headstrt, A California Based Company, as a FrontEnd Flutter Engineer </a>",
+              "date": "13th March to 26th April, 2020"
+            },
+            {
+              "title": "Resource Person",
+              "company": "<a href=\"https://github.com/BullsEye34/BullsEye34.github.io/blob/master/portfolio/img/photo_2019-12-20_17-11-09.jpg\" target=\"_blank\">a contract with NextUp as a resource person for \"Creating Augmented Realities\" held in 2019</a>",
+              "date": "11th & 12th October, 2019"
+            },
+            {
+              "title": "Instagram Clone",
+              "company": "<a href=\"https://github.com/BullsEye34/instagram_clone/releases\" target=\"_blank\">a flutter app which clones the interface of instagram, and using the backend as firebase</a>",
+              "date": "16th July, 2019"
+            },
+            {
+              "title": "NO GST CALCULAtor",
+              "company": "<a href=\"https://github.com/BullsEye34/no_gst_calculator/releases\" target=\"_blank\">a flutter app to calculate selling price without gst from a given mrp</a>",
+              "date": "13th July, 2019"
+            },
+            {
+              "title": "AR Solar System",
+              "company": "<a href=\"https://github.com/BullsEye34/Solar-System\" target=\"_blank\">An Augmented Reality Based App Made Using Vuforia and Unity Engine.</a>",
+              "date": "15th March, 2019"
+            },
+            {
+              "title": "ProtoWorks",
+              "company": "<a href=\"http://www.vamshiprasad.ga/protoworks.github.io/\" target=\"_blank\">A website for a start-up, ProtoWorks</a>",
+              "date": "17th February, 2019"
+            },
+            {
+              "title": "Havoc OS",
+              "company": "<a href=\"http://www.vamshiprasad.ga/havgit.github.io/\" target=\"_blank\">A Website For An Android Custom ROM</a>",
+              "date": "23rd August, 2018"
+            },
+            {
+              "title": "Uttunga Entertainments",
+              "company": "<a href=\"http://www.uttunga.ga\" target=\"_blank\">A Website For A Group Of Movie Actors And Directors</a>",
+              "date": "27th June, 2018"
+            },
+            {
+              "title": "Android Custom ROM Development",
+              "company": "<a href=\"https://androidfilehost.com/?w=profile&uid=673368273298936714\" target=\"_blank\">Compiled Various Custom ROMs and Much More</a>",
+              "date": "July, 2016 - 20th June, 2018"
+            },
+            {
+              "title": "Raghavs Fitness",
+              "company": "<a href=\"http://www.raghavsfitness.tk/\" target=\"_blank\">A Website For A Gymnasium</a>",
+              "date": "30th April, 2018"
+            }
           ];
 
           for (const key in dataList) {
@@ -548,7 +584,7 @@ return returnable;
               "title": "Sector Warden",
               "desc": "Working as a Sector Warden for Civil Defence Div. 34, Bangalore, since 2020.",
               "place": "Civil Defence",
-              "date": "Sept. 2020 - Present"
+              "date": "Sept. 2020 - 2023"
             },
             {
               "title": "Volunteer",
@@ -626,7 +662,7 @@ return returnable;
             <span class="text-primary">September 2019 - October 2021</span>
           </div>
         </div>
-        
+
         <div class="resume-item d-flex flex-column flex-md-row mb-5">
           <div class="resume-content mr-auto">
             <h3 class="mb-0">AMC Engineering College</h3>
@@ -650,7 +686,7 @@ return returnable;
             <span class="text-primary">July 2015 - March 2017</span>
           </div>
         </div>
-        
+
         <div class="resume-item d-flex flex-column flex-md-row mb-5">
           <div class="resume-content mr-auto">
             <h3 class="mb-0">Sree Rama Vidyalaya</h3>
@@ -669,11 +705,14 @@ return returnable;
     <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="interests">
       <div class="my-auto">
         <h2 class="mb-5">Interests</h2>
-        <p>Apart from being a web developer and a Freelance Flutter Engineer, I enjoy most of my time being indoors. </p>
+        <p>Apart from being a web developer and a Freelance Flutter Engineer, I enjoy most of my time being indoors.
+        </p>
         <p class="mb-0">I follow a number of sci-fi and fantasy genre movies and television shows, I am an aspiring
-          chef, and I spend a large amount of my free time exploring the latest technolgy advancements in the front-end development world. I am a huge fan of music , peaceful , calm , and sometimes loud music .</p><br>
+          chef, and I spend a large amount of my free time exploring the latest technolgy advancements in the front-end
+          development world. I am a huge fan of music , peaceful , calm , and sometimes loud music .</p><br>
         <p class="mb-0">I also train my dog, interact with nature, spend some time with plants, and animals. </p>
-        <p>I am also a gamer and enjoy much of my time gaming. I have a huge passion for learning new things, and developing my skills while I can.</p>
+        <p>I am also a gamer and enjoy much of my time gaming. I have a huge passion for learning new things, and
+          developing my skills while I can.</p>
       </div>
     </section>
 
